@@ -11,7 +11,34 @@
 <body>
 
     <div class="container">
+        <form class="form">
+            <div class="row">
+                <label for="fname">نام: </label>
+                <input type="text" id="fname">
+                <label for="lname">نام خانوادگی: </label>
+                <input type="text" id="lname">
+            </div>
+            <div class="row">
+
+                <label for="bdate">تاریخ تولد: </label>
+                <input type="text" id="bdate">
+                <label for="email">ایمیل: </label>
+                <input type="text" id="email">
+            </div>
+
+            <div class="row">
+
+                <label for="city">استان</label>
+                <input type="text" id="city">
+                <label for="address">آدرس: </label>
+                <input type="text" id="address">
+            </div>
+            <div class="validation"></div>
+            <input type="submit" class="submit" value="درج اطلاعات">
+        </form>
         <h1>جدول کاربران</h1>
+
+        <input type="text" class="search" placeholder="جستجو کن ...">
         <table>
             <thead>
                 <tr>
@@ -20,6 +47,8 @@
                     <th>نام خانوادگی</th>
                     <th>تاریخ تولد</th>
                     <th>ایمیل</th>
+                    <th>استان</th>
+                    <th>آدرس</th>
                 </tr>
             </thead>
             <tbody>
